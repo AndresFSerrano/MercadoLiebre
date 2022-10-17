@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CDarioB/mercado-liebre.git"
+    "url": "git+https://github.com/AndresFSerrano/MercadoLiebre.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CDarioB/mercado-liebre/issues"
+    "url": "https://github.com/AndresFSerrano/MercadoLiebre.git"
   },
-  "homepage": "https://github.com/CDarioB/mercado-liebre#readme",
+  "homepage": "https://github.com/AndresFSerrano/MercadoLiebre#readme",
   "dependencies": {
     "express": "^4.18.1"
   },
