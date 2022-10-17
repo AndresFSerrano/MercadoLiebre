@@ -1,64 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: 12px;
+    background-color: #ebebeb;
+    margin: 0px;
+    padding: 0px;
 }
 
+/* ************************* */
+/* ***** header config ***** */
 header{
+    width: 100vw;
     background-color: #EAC926;
 }
 
-section.logo,
-section.buscar{
+section.logo, section.search { 
     margin-left: 30px;
 }
 
-h3.titulares{
+section.logo {
+    width: 40%;
+}
+
+section.search{
+    width: 90%;
+    margin-top: 15px;
+}
+
+button .button-search {
+    margin-top: 1px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    background-color: #ebebeb;;
+    padding: 1px;
+    border-color: #666;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+div.buy-outs {
+    margin-bottom: 20px;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: black;
+}
+/*
+.burguer-menu i {
+    background-color: #1259c3;
+    color: #ebebeb;
+    padding: 11px;
+    margin-left: 45%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
     font-size: 24px;
 }
-
-h4.titulo{
-    font-weight: bold;
+*/
+button.bars {
+    background-color: #1259c3;
+    color: #ebebeb;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
-footer{
+.banner{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+/* *** end header config *** */
+/* ************************* */
+
+/* ****** main config ****** */
+main{
+    width: 90%;
+    margin: auto;
+}
+
+h3.body-titles{
+    font-size: 24px;
+    font-weight: 900;
+    color: #666;
+
+}
+
+article{
+    width: 90%;
+    margin-top: 10px;
+}
+
+/*
+article.img-procucto {
+    display: flex;
+    width: 140px;
+    height: 314px;
+}
+*/
+
+article img {
+    width: 90%;
+}
+
+.product-detail{
+    width: 90%;
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    padding: 0px 15px;
+    margin: 0px;
+}
+
+.fa-truck {
+    color: #39b54a; /*#2b7434*/
+    margin-top: 1px;
+}
+
+p.price{
+    font-size: 18px;
+    margin: 10px 0px 0px 0px;
+}
+
+p.discount, p.description{
+    font-size: 16px;
+}
+
+p.discount{
+    color: #39b54a;
+    margin: 0px 0px;
+}
+
+p.description{
+    margin: 10px 0px 0px 0px;
+}
+
+/* **** end main config **** */
+/* ************************* */
+
+/* ***** footer config ***** */
+footer {
+    width: 100vw;
+    background-color: white;
+    color: #666;
     text-align: center;
+    padding: 0px;
+    /*padding: 50px 50px 20px;
+    /*padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;*/
+    margin: 0px;
 }
 
-.iconFooter{
+h4.footer-titles{
+    font-size: 16px;
+    font-weight: 900;
+    color: #666;
+    padding: 0%;
+    margin: 0%;
+}
+
+.footer-icon{
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-button.lupa {
-    background-color: #ebebeb;
-    color: black
+p.footer-article-description {
+    font-size: 12px;
+    padding: 0%;
+    margin-top: 0%;
 }
+
+p.copyrigth{
+    font-size: 12px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+/* *** end footer config *** */
+/* ************************* */
+
 
 .imgCenter{
     text-align: center
 }
 
-/* .imgBanner{
-    width: 1rem;
-} */
 
-article{
-    font-size: 16px;
+@media (max-width: 360px){
+    main,footer {
+        display: none;
+    }
 }
 
-.precio{
-    font-size: 18px;
+@media (min-width: 361px){
+/* Navegación en tablets (ancho mínimo 361 px)*/
+    /*box-shadow: 0px 0px 10px rgb(100,100,100);*/
+    .descripcion {
+        display: none;
+    }
 }
 
-.descuento{
-    color: #39b54a;
+@media (min-width: 769px){
+    /* Navegación en desktop (ancho mínimo 769 px)*/
+    .burger-menu {  
+        display: none;
+    }
 }
-
-button.bars {
-	background-color: #1259c3;
-    color: #fff;
-}
-
-
