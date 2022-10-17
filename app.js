@@ -4,6 +4,7 @@ const path = require ('path')
 const app = express();
 
 const publicPath = path.resolve(__dirname,'./public');
+const port = process.env.PORT || 3001;
 app.use(express.static(publicPath));
 
 app.get('/', (req, res) => {
@@ -20,5 +21,5 @@ app.get("/login", (req, res) => {
 
 
 //app.listen (3030, () => console.log ("Server started: http://localhost:3030/") ); 
-const port =process.PORT || 3001;
+
 app.listen(port, ()=>console.log('Servidor corriendo en el puerto ' + port));
